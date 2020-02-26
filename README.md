@@ -1,2 +1,1 @@
-# pyenv-pipenv-vim-config
-how I use Pyenv + Pipenv + Neovim for my daily projects
+# How I use Pyenv + Pipenv + Neovim for my daily projects
