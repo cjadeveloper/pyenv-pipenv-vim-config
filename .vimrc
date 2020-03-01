@@ -79,6 +79,10 @@ Plug 'vim-airline/vim-airline-themes'
 " Code and files fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" Create useful .gitignore files for your project
+" (https://docs.gitignore.io/install/editor-extensions#neovim-filip-szymanski)
+Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+Plug 'fszymanski/fzf-gitignore', {'do': ':UpdateRemotePlugins'}
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
 " Async autocompletion
@@ -453,6 +457,9 @@ endif
 " MyCustom configs --------------------
 set mouse=a
 set colorcolumn=89
+
+" Display hidden files by default.
+let NERDTreeShowHidden=1
 
 " Switch lines like vscode (Sublime-Text keymap)
 " ---------------------------------------------
