@@ -1,3 +1,8 @@
+" cjadeveloper-vim-config
+" Copyright (C) 2020 - Cristian Javier Azulay (cjadeveloper@gmail.com)
+" version: 1.5.0
+" 
+" cjadeveloper-vim-config is an adaptation of  
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
 " version: 12.0.0
@@ -467,8 +472,10 @@ let NERDTreeShowHidden=1
 :nmap <C-S-Up> :m-2<CR>
 " Ctrl+Shift+Down switch line 1 under line 2
 :nmap <C-S-Down> :m+1<CR>
-" End MyCuston configs ----------------
+" <ESC> Save file without exit   
+:nmap <ESC> :w<CR>
 
+" End MyCuston configs ----------------
 
 " Include user's custom nvim configurations
 if using_neovim
