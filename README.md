@@ -60,10 +60,24 @@ pipenv install --dev neovim flake8 pylint isort msgpack pynvim bpython ipython
 5. Open Neovim with `pipenv run nvim .` and it will it continue the installation by 
 itself. Wait for it finish and done!
 
+6. Then, when Neovim already works, we could activate the venv with `pipenv shell` 
+inside our projects directory and open it with `nvim .`
+
+### Optional: Pipenvwrapper
+
+[Pipenvwrapper](https://github.com/Peibolvig/pipenvwrapper) is a shell functions 
+similar to virtualenvwrapper but using Pipenv as backend.
+
+If we use Pipenvwrapper, we could write `workon` (or` useenv` depends on how we 
+configure it) and use a specific virtualenv or list all the available ones if none is
+provided. With this we can activate the venv and go directly to the project folder from
+wherever we are.
+
 ## References
 
 - [Vim Cheat Sheet](https://vim.rtorr.com/)
 - [pipenv](https://pipenv.kennethreitz.org/en/latest/#)
 - [pyenv](https://github.com/pyenv/pyenv)
 - [fisa vim config](http://vim.fisadev.com/)
+- [Creating a new file or directory in Vim using NERDTree](https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/)
 
