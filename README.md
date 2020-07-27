@@ -44,13 +44,12 @@ Using /home/cjadeveloper/.pyenv/versions/3.7.4/bin/python (3.7.4) to create virt
 In fish:
 
 ```fish
-$ pipenv --python (pyenv which python)
+> pipenv --python (pyenv which python)
 Creating a virtualenv for this project…
 Pipfile: /home/cjadeveloper/.../my-project/Pipfile
 Using /home/cjadeveloper/.pyenv/versions/3.7.4/bin/python (3.7.4) to create virtualenv…
 ...
 ```
-
 
 ### Install Neovim Python Packages and fancy interactive superpower terms
 
@@ -95,4 +94,3 @@ wherever we are.
 - [pyenv](https://github.com/pyenv/pyenv)
 - [fisa vim config](http://vim.fisadev.com/)
 - [Creating a new file or directory in Vim using NERDTree](https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/)
-
