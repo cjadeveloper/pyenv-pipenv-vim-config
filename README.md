@@ -31,6 +31,8 @@ $ pyenv which python
 
 We If we could use this information 
 
+In bash or zsh to do:
+
 ```bash
 $ pipenv --python $(pyenv which python)
 Creating a virtualenv for this project…
@@ -38,6 +40,17 @@ Pipfile: /home/cjadeveloper/.../my-project/Pipfile
 Using /home/cjadeveloper/.pyenv/versions/3.7.4/bin/python (3.7.4) to create virtualenv…
 ...
 ```
+
+In fish:
+
+```fish
+$ pipenv --python (pyenv which python)
+Creating a virtualenv for this project…
+Pipfile: /home/cjadeveloper/.../my-project/Pipfile
+Using /home/cjadeveloper/.pyenv/versions/3.7.4/bin/python (3.7.4) to create virtualenv…
+...
+```
+
 
 ### Install Neovim Python Packages and fancy interactive superpower terms
 
@@ -60,8 +73,10 @@ pipenv install --dev neovim flake8 pylint isort msgpack pynvim bpython ipython
 5. Open Neovim with `pipenv run nvim .` and it will it continue the installation by 
 itself. Wait for it finish and done!
 
-6. Then, when Neovim already works, we could activate the venv with `pipenv shell` 
+6. Then, when Neovim already works, we could activate the venv with `pipenv shell --fancy` 
 inside our projects directory and open it with `nvim .`
+
+> Note: The `--fancy` option is necessary in case we use fish together with some oh-my-fish theme and the prompt breaks. Just as pointed out [here](https://github.com/sentriz/fish-pipenv/issues/18)
 
 ### Optional: Pipenvwrapper
 
