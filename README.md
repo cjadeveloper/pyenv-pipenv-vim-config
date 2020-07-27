@@ -1,6 +1,6 @@
-# Pyenv + Pipenv + Vim/Neovim
+# Pyenv + Pipenv + Neovim
 
-How I use Pyenv + Pipenv + Vim/Neovim for my daily projects.
+How I use Pyenv + Pipenv + Neovim for my daily projects.
 
 ## Pyenv config
 
@@ -67,7 +67,7 @@ sudo apt install git curl python3-pip exuberant-ctags ack-grep
 pipenv install --dev neovim flake8 pylint isort msgpack pynvim bpython ipython
 ```
 
-4. Download the [config file](https://gist.github.com/cjadeveloper/7aea22b64bb2419c44d55c304c3246ae)
+4. Download the [config file](https://gist.github.com/cjadeveloper/7aea22b64bb2419c44d55c304c3246ae) and  save it as `~/.config/nvim/init.vim` (use that exact path and name).
 
 5. Open Neovim with `pipenv run nvim .` and it will it continue the installation by 
 itself. Wait for it finish and done!
